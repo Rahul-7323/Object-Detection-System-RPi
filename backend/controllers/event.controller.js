@@ -19,7 +19,7 @@ const getEvents = async (req, res, next) => {
     return next(error);
   }
 
-  res.json({ events: events.map(event => event.toObject({ getters: true })) });
+  res.json({ events: events });
 };
 
 
@@ -51,7 +51,7 @@ const createEvent = async (req, res, next) => {
     return next(error);
   }
 
-  res.status(201).json({ event: createdEvent.toObject({ getters: true }) });
+  res.status(201).json({ event: createdEvent.toObject() });
 };
 
 exports.getEvents = getEvents;
