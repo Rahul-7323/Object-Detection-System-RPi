@@ -4,60 +4,6 @@ import io from "socket.io-client";
 
 const socket = io(import.meta.env.VITE_BACKEND_SOCKET_URL);
 
-const dummyEvents = [
-  {
-    timestamp: "02-11-2022 19:15",
-    description:
-      "2 phones, 2 boxes and 2 people detected 2 phones, 2 boxes and 2 people detected",
-    level: 1,
-    objects: [
-      {name: "phone", prob: 46},
-      {name: "person", prob: 76},
-    ],
-    image: "https://api.lorem.space/image/game?w=400&h=400",
-  },
-  {
-    timestamp: "02-11-2022 19:16",
-    description: "2 phones, 2 boxes and 2 people detected",
-    level: 3,
-    objects: [
-      {name: "phone", prob: 46},
-      {name: "person", prob: 76},
-    ],
-    image: "https://api.lorem.space/image/game?w=400&h=400",
-  },
-  {
-    timestamp: "02-11-2022 19:17",
-    description: "2 phones, 2 boxes and 2 people detected",
-    level: 2,
-    objects: [
-      {name: "phone", prob: 46},
-      {name: "person", prob: 76},
-    ],
-    image: "https://api.lorem.space/image/game?w=400&h=400",
-  },
-  {
-    timestamp: "02-11-2022 19:18",
-    description: "2 phones, 2 boxes and 2 people detected",
-    level: 2,
-    objects: [
-      {name: "phone", prob: 46},
-      {name: "person", prob: 76},
-    ],
-    image: "https://api.lorem.space/image/game?w=400&h=400",
-  },
-  {
-    timestamp: "02-11-2022 19:19",
-    description: "2 phones, 2 boxes and 2 people detected",
-    level: 1,
-    objects: [
-      {name: "phone", prob: 46},
-      {name: "person", prob: 76},
-    ],
-    image: "https://api.lorem.space/image/game?w=400&h=400",
-  },
-];
-
 function App() {
   const [events, setEvents] = useState([]);
 
