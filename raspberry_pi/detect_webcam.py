@@ -1,3 +1,9 @@
+"""
+This code is based on the following project - https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi
+
+I have added my own code for performing the HTTP POST request
+"""
+
 # Import packages
 import os
 import argparse
@@ -253,8 +259,7 @@ while True:
 
     files = [('image',('frame.jpg', open('./frame.jpg','rb'), 'image/jpg'))]
 
-    headers = {
-    }
+    headers = {}
 
     url = 'http://192.168.29.49:5000/api/events/'
 
