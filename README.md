@@ -6,7 +6,7 @@
 
 ## About The Project
 
-![dashboard](images/dashboard.png "Title")
+![dashboard](images/dashboard.png)
 
 In this project, a real-time object detection system has been developed that consists of a Raspberry Pi and a webcam for performing object detection along with a backend and a frontend for storing and viewing the data. The backend has been built using `Express`, `Socket.io` and `MongoDB Atlas`. The frontend has been built using `React` and `Tailwind CSS`.
 
