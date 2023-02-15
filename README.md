@@ -12,7 +12,7 @@ In this project, a real-time object detection system has been developed that con
 
 The Raspberry Pi uses `ssd_mobilenet_v1.tflite` for performing object detection on the video stream from the webcam. The results from the object detection is then sent to the backend through a HTTP POST request which then gets stored in mongoDB Atlas. The frontend displays all the events that the Raspberry Pi generated with details such as the objects detected in a frame of the video stream, the image, the probability of the class of the detected objects and so on.
 
-Socket.IO has been used for creating a bidirectional connnection between the backend and the frontend. When the backend recieves a new event from the Raspberry Pi, it updates the events displayed in the frontend in real-time.
+`Socket.IO` has been used for creating a bidirectional connnection between the backend and the frontend. When the backend recieves a new event from the Raspberry Pi, it updates the events displayed in the frontend in real-time.
 
 ## Frameworks and Technology Used
 
